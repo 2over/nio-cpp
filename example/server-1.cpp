@@ -87,7 +87,7 @@ int main() {
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);
     serv_addr.sin_port = htons(PORT);
 
-    // 绑定文件描述符和服务器的ip和端口号
+    // 绑定文件描述符和务器的ip和端口号
     status = bind(serv_sock, (struct sockaddr *) &serv_addr, sizeof(serv_addr));
 
     if (0 != status) {
